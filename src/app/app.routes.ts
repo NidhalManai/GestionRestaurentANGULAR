@@ -1,3 +1,13 @@
 import { Routes } from '@angular/router';
 
-export const routes: Routes = [];
+import { ProduitsComponent } from './produits/produits.component';
+import { AddProduitComponent } from './add-produit/add-produit.component';
+
+export const routes: Routes = [
+    {path: "produits", component : ProduitsComponent},
+    {path: "add-produit", component : AddProduitComponent},
+    // {path: "UserName", redirectTo: "produits", pathMatch: "full" }
+    ];
+
+// Path: src/app/app.component.html
+// Path: src/app/app.module.ts
